@@ -1,0 +1,24 @@
+{
+  "originHash" : "ba3c6f271f9986b141509f2323a15483dd360b38fbfc2acf89936eb174dd8c71",
+  "pins" : [
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:onevcat/Kingfisher.git",
+      "state" : {
+        "revision" : "2ef543ee21d63734e1c004ad6c870255e8716c50",
+        "version" : "7.12.0"
+      }
+    },
+    {
+      "identity" : "rouratools",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:RouraIndustries/RouraTools.git",
+      "state" : {
+        "revision" : "7be046b03ae3b9b8263e815ac9f40e5d8dbf471e",
+        "version" : "1.6.3"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -3,30 +3,50 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 71;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE3AD75E2C8F9FBF00559006 /* PodcastHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3AD75D2C8F9FBF00559006 /* PodcastHubApp.swift */; };
-		EE3AD7602C8F9FBF00559006 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3AD75F2C8F9FBF00559006 /* ContentView.swift */; };
-		EE3AD7622C8F9FC000559006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3AD7612C8F9FC000559006 /* Assets.xcassets */; };
-		EE3AD7662C8F9FC000559006 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3AD7652C8F9FC000559006 /* Preview Assets.xcassets */; };
+		EEEB590F2C90B3BE000272A7 /* RouraFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = EEEB590E2C90B3BE000272A7 /* RouraFoundation */; };
+		EEEB59112C90B3BE000272A7 /* RouraSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EEEB59102C90B3BE000272A7 /* RouraSwiftUI */; };
+		EEEB59132C90B3BE000272A7 /* RouraTools in Frameworks */ = {isa = PBXBuildFile; productRef = EEEB59122C90B3BE000272A7 /* RouraTools */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE3AD75A2C8F9FBF00559006 /* PodcastHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE3AD75D2C8F9FBF00559006 /* PodcastHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastHubApp.swift; sourceTree = "<group>"; };
-		EE3AD75F2C8F9FBF00559006 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		EE3AD7612C8F9FC000559006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EE3AD7632C8F9FC000559006 /* PodcastHub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PodcastHub.entitlements; sourceTree = "<group>"; };
-		EE3AD7652C8F9FC000559006 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EEEB590B2C90B24C000272A7 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				App/ContentView.swift,
+				App/PodcastHubApp.swift,
+				"Configurations/Private XC Configurations/AppVersion.xcconfig",
+				"Configurations/Private XC Configurations/Base.xcconfig",
+				"Configurations/XC Configurations/AppStore.xcconfig",
+				"Configurations/XC Configurations/Dev.xcconfig",
+				"Configurations/XC Configurations/Production.xcconfig",
+				"Configurations/XC Configurations/QA.xcconfig",
+				Resources/Catalogs/Assets.xcassets,
+				"Resources/Preview Content/Preview Assets.xcassets",
+			);
+			target = EE3AD7592C8F9FBF00559006 /* PodcastHub */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EEEB59062C90B24C000272A7 /* PodcastHub */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (EEEB590B2C90B24C000272A7 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = PodcastHub; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EE3AD7572C8F9FBF00559006 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEEB59112C90B3BE000272A7 /* RouraSwiftUI in Frameworks */,
+				EEEB59132C90B3BE000272A7 /* RouraTools in Frameworks */,
+				EEEB590F2C90B3BE000272A7 /* RouraFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,7 +56,7 @@
 		EE3AD7512C8F9FBF00559006 = {
 			isa = PBXGroup;
 			children = (
-				EE3AD75C2C8F9FBF00559006 /* PodcastHub */,
+				EEEB59062C90B24C000272A7 /* PodcastHub */,
 				EE3AD75B2C8F9FBF00559006 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,26 +67,6 @@
 				EE3AD75A2C8F9FBF00559006 /* PodcastHub.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		EE3AD75C2C8F9FBF00559006 /* PodcastHub */ = {
-			isa = PBXGroup;
-			children = (
-				EE3AD75D2C8F9FBF00559006 /* PodcastHubApp.swift */,
-				EE3AD75F2C8F9FBF00559006 /* ContentView.swift */,
-				EE3AD7612C8F9FC000559006 /* Assets.xcassets */,
-				EE3AD7632C8F9FC000559006 /* PodcastHub.entitlements */,
-				EE3AD7642C8F9FC000559006 /* Preview Content */,
-			);
-			path = PodcastHub;
-			sourceTree = "<group>";
-		};
-		EE3AD7642C8F9FC000559006 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				EE3AD7652C8F9FC000559006 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,7 +97,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					EE3AD7592C8F9FBF00559006 = {
 						CreatedOnToolsVersion = 15.4;
@@ -113,6 +113,9 @@
 				Base,
 			);
 			mainGroup = EE3AD7512C8F9FBF00559006;
+			packageReferences = (
+				EEEB590D2C90B3BE000272A7 /* XCRemoteSwiftPackageReference "RouraTools" */,
+			);
 			productRefGroup = EE3AD75B2C8F9FBF00559006 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,8 +130,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE3AD7662C8F9FC000559006 /* Preview Assets.xcassets in Resources */,
-				EE3AD7622C8F9FC000559006 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,16 +140,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE3AD7602C8F9FBF00559006 /* ContentView.swift in Sources */,
-				EE3AD75E2C8F9FBF00559006 /* PodcastHubApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		EE3AD7672C8F9FC000559006 /* Debug */ = {
+		EE3AD7732C8FA6C300559006 /* Dev */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = EEEB59062C90B24C000272A7 /* PodcastHub */;
+			baseConfigurationReferenceRelativePath = "Configurations/XC Configurations/Dev.xcconfig";
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -181,6 +182,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -205,13 +207,63 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
-			name = Debug;
+			name = Dev;
 		};
-		EE3AD7682C8F9FC000559006 /* Release */ = {
+		EE3AD7742C8FA6C300559006 /* Dev */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = EEEB59062C90B24C000272A7 /* PodcastHub */;
+			baseConfigurationReferenceRelativePath = "Configurations/XC Configurations/Dev.xcconfig";
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PodcastHub/Resources/Entitlements/PodcastHub.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${PH_BUILD_VERSION}";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"PodcastHub/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = QNA2GYCBD6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PodcastHub/Resources/Property Lists/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "${PH_APP_NAME}";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = "${PH_APP_VERSION}";
+				PRODUCT_BUNDLE_IDENTIFIER = "${PH_BUNDLE_IDENTIFIER}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,7";
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Dev;
+		};
+		EE3AD7752C8FA6C700559006 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = EEEB59062C90B24C000272A7 /* PodcastHub */;
+			baseConfigurationReferenceRelativePath = "Configurations/XC Configurations/QA.xcconfig";
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -244,6 +296,231 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = QA;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = QA;
+		};
+		EE3AD7762C8FA6C700559006 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = EEEB59062C90B24C000272A7 /* PodcastHub */;
+			baseConfigurationReferenceRelativePath = "Configurations/XC Configurations/QA.xcconfig";
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PodcastHub/Resources/Entitlements/PodcastHub.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${PH_BUILD_VERSION}";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"PodcastHub/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = QNA2GYCBD6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PodcastHub/Resources/Property Lists/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "${PH_APP_NAME}";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = "${PH_APP_VERSION}";
+				PRODUCT_BUNDLE_IDENTIFIER = "${PH_BUNDLE_IDENTIFIER}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,7";
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = QA;
+		};
+		EE3AD7772C8FA6CB00559006 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = EEEB59062C90B24C000272A7 /* PodcastHub */;
+			baseConfigurationReferenceRelativePath = "Configurations/XC Configurations/Production.xcconfig";
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRODUCTION;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Production;
+		};
+		EE3AD7782C8FA6CB00559006 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = EEEB59062C90B24C000272A7 /* PodcastHub */;
+			baseConfigurationReferenceRelativePath = "Configurations/XC Configurations/Production.xcconfig";
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PodcastHub/Resources/Entitlements/PodcastHub.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "${PH_BUILD_VERSION}";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"PodcastHub/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = QNA2GYCBD6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PodcastHub/Resources/Property Lists/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "${PH_APP_NAME}";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = "${PH_APP_VERSION}";
+				PRODUCT_BUNDLE_IDENTIFIER = "${PH_BUNDLE_IDENTIFIER}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,7";
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Production;
+		};
+		EE3AD7792C8FA6D100559006 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = EEEB59062C90B24C000272A7 /* PodcastHub */;
+			baseConfigurationReferenceRelativePath = "Configurations/XC Configurations/AppStore.xcconfig";
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -261,23 +538,32 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = APPSTORE;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
-			name = Release;
+			name = AppStore;
 		};
-		EE3AD76A2C8F9FC000559006 /* Debug */ = {
+		EE3AD77A2C8FA6D100559006 /* AppStore */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = EEEB59062C90B24C000272A7 /* PodcastHub */;
+			baseConfigurationReferenceRelativePath = "Configurations/XC Configurations/AppStore.xcconfig";
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = PodcastHub/PodcastHub.entitlements;
+				CODE_SIGN_ENTITLEMENTS = PodcastHub/Resources/Entitlements/PodcastHub.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PodcastHub/Preview Content\"";
-				DEVELOPMENT_TEAM = 8Y488UGXR8;
+				CURRENT_PROJECT_VERSION = "${PH_BUILD_VERSION}";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"PodcastHub/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = QNA2GYCBD6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PodcastHub/Resources/Property Lists/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "${PH_APP_NAME}";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -291,53 +577,19 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.croura.PodcastHub;
+				MARKETING_VERSION = "${PH_APP_VERSION}";
+				PRODUCT_BUNDLE_IDENTIFIER = "${PH_BUNDLE_IDENTIFIER}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,7";
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
-			name = Debug;
-		};
-		EE3AD76B2C8F9FC000559006 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = PodcastHub/PodcastHub.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PodcastHub/Preview Content\"";
-				DEVELOPMENT_TEAM = 8Y488UGXR8;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.croura.PodcastHub;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
+			name = AppStore;
 		};
 /* End XCBuildConfiguration section */
 
@@ -345,22 +597,55 @@
 		EE3AD7552C8F9FBF00559006 /* Build configuration list for PBXProject "PodcastHub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE3AD7672C8F9FC000559006 /* Debug */,
-				EE3AD7682C8F9FC000559006 /* Release */,
+				EE3AD7752C8FA6C700559006 /* QA */,
+				EE3AD7732C8FA6C300559006 /* Dev */,
+				EE3AD7792C8FA6D100559006 /* AppStore */,
+				EE3AD7772C8FA6CB00559006 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Dev;
 		};
 		EE3AD7692C8F9FC000559006 /* Build configuration list for PBXNativeTarget "PodcastHub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE3AD76A2C8F9FC000559006 /* Debug */,
-				EE3AD76B2C8F9FC000559006 /* Release */,
+				EE3AD7762C8FA6C700559006 /* QA */,
+				EE3AD7742C8FA6C300559006 /* Dev */,
+				EE3AD77A2C8FA6D100559006 /* AppStore */,
+				EE3AD7782C8FA6CB00559006 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Dev;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EEEB590D2C90B3BE000272A7 /* XCRemoteSwiftPackageReference "RouraTools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:RouraIndustries/RouraTools.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EEEB590E2C90B3BE000272A7 /* RouraFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEEB590D2C90B3BE000272A7 /* XCRemoteSwiftPackageReference "RouraTools" */;
+			productName = RouraFoundation;
+		};
+		EEEB59102C90B3BE000272A7 /* RouraSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEEB590D2C90B3BE000272A7 /* XCRemoteSwiftPackageReference "RouraTools" */;
+			productName = RouraSwiftUI;
+		};
+		EEEB59122C90B3BE000272A7 /* RouraTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEEB590D2C90B3BE000272A7 /* XCRemoteSwiftPackageReference "RouraTools" */;
+			productName = RouraTools;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE3AD7522C8F9FBF00559006 /* Project object */;
 }

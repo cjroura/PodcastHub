@@ -1,0 +1,14 @@
+//
+//  Base.xcconfig
+//  PodcastHub
+//
+//  Created by Christopher J. Roura on 9/9/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "AppVersion.xcconfig"
+
+PH_APP_NAME = PodcastHub
+PH_BUNDLE_IDENTIFIER = co.croura.PodcastHub
